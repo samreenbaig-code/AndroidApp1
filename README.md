@@ -76,11 +76,6 @@ app/
      ├─ drawable/rounded_button.xml
      └─ drawable/background_gradient.xml
 
-🎞 Screenshots (Optional)
-
-Add your screenshots after upload:
-
-![Screenshot](screenshots/app_screen.png)
 
 🧠 How the App Works
 1️⃣ Counter Logic
