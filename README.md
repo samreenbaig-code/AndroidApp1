@@ -1,66 +1,66 @@
-🌟 AndroidApp1 – Counter App with History (Kotlin + ViewBinding)
+.
 
-This project is my custom Android application created for Assignment – Week 7 Android Development.
-The app recreates the core features of the TapCounter2025 and Views2025 exercises, but with improved UI, history saving, and data persistence.
-🚀 App Features
+🌟 AndroidApp1 – Counter App with History
+Kotlin • ViewBinding • RecyclerView • SharedPreferences
+📌 Overview
+
+This project is my custom Android application for Week 7 Assignment.
+It includes counter functionality, step selection, history saving, deletion, and a refreshed UI based on the TapCounter2025 and Views2025 apps.
+
+🔥 Features
 🔢 Counter System
 
-Increment & decrement the counter
+Increment counter
 
-Adjustable step values (1, 5, 10, 50)
+Decrement counter
 
-Long-press the counter to reset to 0
+Choose step value: 1 • 5 • 10 • 50
 
-💾 Save History
+Long-press counter ➝ Reset to 0
 
-Save the current count with timestamp
+💾 History Tracking
 
-Scrollable list of saved entries
+Save the current count
 
-Each saved item includes:
+Timestamp included
 
-Count value
+History displayed in a scrollable list
 
-Date + time saved
+Each item has a Delete button
 
-A delete button
+New items appear at the top
 
-🧹 Auto-clear History
+🧹 History Auto-Clear
 
-Every time the app launches, the history starts fresh
+Every time the app starts:
 
-Ensures clean workspace for each use
+Count resets to 0
 
-🎨 Custom UI / Styling
+History resets to empty
+
+This ensures a clean, fresh start each time.
+
+🎨 User Interface (UI)
+
+Custom rounded buttons
+
+Counter box with orange border
+
+Purple modern theme
 
 Gradient background
 
-Rounded buttons with custom drawable
+Clean layout using ConstraintLayout
 
-Styled counter box
-
-ViewBinding used instead of findViewById
-
-Fully responsive layout for all screens
-
-🛠️ Technologies Used
-
-Kotlin
-
-Android Studio
-
-ViewBinding
-
-RecyclerView + Adapter
-
-SharedPreferences
-
-JSON storage for history
-
-ConstraintLayout
-
-Custom Drawable Resources
-
+🧰 Technologies Used
+Technology	Purpose
+Kotlin	Main programming language
+Android Studio	IDE
+ViewBinding	Replaces findViewById
+RecyclerView	Display history
+SharedPreferences	Store counter + history
+JSON	Save list history
+Drawable Resources	Buttons + backgrounds
 📁 Project Structure
 app/
  ├─ java/com/example/androidapp1/
@@ -76,72 +76,55 @@ app/
      ├─ drawable/rounded_button.xml
      └─ drawable/background_gradient.xml
 
-📸 Screenshots
+🎞 Screenshots (Optional)
 
-(Add your emulator screenshots here after uploading to GitHub)
+Add your screenshots after upload:
 
-Example:
+![Screenshot](screenshots/app_screen.png)
 
-![App Screenshot](screenshots/screen1.png)
+🧠 How the App Works
+1️⃣ Counter Logic
+currentCount += currentStep
+persistCount()
+updateCounterText()
 
-🔧 How the App Works
-1. Counter Management
+2️⃣ Saving History
 
-Buttons adjust counter based on selected step.
+Saves value
 
-Current value is always shown in the big counter box.
+Saves timestamp
 
-2. Saving History
+Stored in JSON array
 
-"Save" records the value + timestamp
+Added to RecyclerView
 
-A new card appears at the top of the RecyclerView
-
-3. Data Storage
-
-Counter, Step, and History saved using:
-
-SharedPreferences + JSON
-
-4. Reset / Fresh Start
-
-On app launch:
-
+3️⃣ Clearing on Launch
 historyList.clear()
 prefs.remove(KEY_HISTORY)
 prefs.remove(KEY_COUNT)
 
-
-App always starts with:
-
-Count = 0
-Empty history
-
 📦 Installation
-
 Clone the repository:
-
 git clone https://github.com/USERNAME/AndroidApp1.git
-
 
 Open in Android Studio
 
-Run on emulator or physical device
+Run on emulator or real device.
 
-🧑‍💻 Author
+👩‍💻 Author
 
 Tianna Martin
-Mobile Web Developer & Android Student
-💜 Passionate about learning and building real apps
+Mobile Web Developer & Android Development Student 💛
+Passionate about UI, animations, and mobile app design.
 
-📚 Assignment Requirements Completed
+✅ Assignment Requirements Completed
 
-✔ Create a brand-new Android project
-✔ Replicate TapCounter2025 functionality
-✔ Custom UI with drawables
-✔ Increment/Decrement with step value
-✔ Save history
-✔ Delete history items
-✔ Fresh history on launch
-✔ Fully commented Kotlin code
-✔ GitHub project submission
+✔ Counter with increment/decrement
+✔ Step selection
+✔ Save count to history
+✔ Delete history item
+✔ Clean UI with rounded buttons
+✔ Gradient background
+✔ Use of Kotlin, RecyclerView, ViewBinding
+✔ GitHub repo ready for submission
+✔ Fully commented code
