@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidApp1</string>
+    <string name="step_label">Step:</string>
+    <string name="history_label">History</string>
+
+
+</resources>
